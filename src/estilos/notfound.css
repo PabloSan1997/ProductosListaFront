@@ -1,0 +1,28 @@
+.noEncontar{
+    color: rgb(3, 3, 41);
+    font-size: 3rem;
+    margin:50px auto 0 auto;
+    width: fit-content;
+}
+.errorLogo{
+    width: 100px;
+    margin:50px auto;
+    animation-name: girar;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes girar {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+.jaja{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 200px;
+}
