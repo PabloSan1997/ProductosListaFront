@@ -1,0 +1,63 @@
+.contenedor{
+    width: 100%;
+}
+.login{
+    display: flex;
+}
+.login .caja{
+    border: 3px solid var(--color1);
+    border-radius: 10px;
+    width:40%;
+    height: 300px;
+    margin:100px auto;
+    box-shadow: 10px 10px 10px black;
+    background: rgb(178, 178, 226);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+.login .caja .fila{
+    width: 80%;
+    height: 20%;
+    margin:10px auto;
+    display: flex;
+    flex-direction: column;
+}
+.login .caja .label{
+    margin: auto 10px;
+    font-size: 1.4rem;
+}
+.login .caja input{
+    margin: auto;
+    width: 97%;
+    padding: 2px 0 2px 5px;
+    font-size: 1.3rem;
+    outline: none;
+    border-radius: 10px;
+    border: 2px inset blue;
+    background: blanchedalmond;
+}
+.login .caja h2{
+    width: 100%;
+    padding: 5px 0 5px 0;
+    margin: 0 auto;
+    text-align: center;
+    background: var(--color1);
+    color: white;
+}
+.login .caja .areaboton{
+    width: 100%;
+    height: 40%;
+    margin: auto;
+    display: flex;
+}
+.login .caja .areaboton .boton{
+    margin: auto;
+    font-size: 1.8rem;
+    padding: 5px;
+    cursor: pointer;
+    background: rgb(4, 4, 51);
+    color: blanchedalmond;
+    border: 2px outset rgb(45, 45, 83);
+    border-radius: 10px;
+}
