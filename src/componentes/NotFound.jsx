@@ -1,6 +1,6 @@
 import React from 'react';
 import "../estilos/notfound.css";
-import logo from "../../public/logo.svg";
+import logo from "../../asserts/logo.svg";
 export function NotFound() {
     document.title="Not found";
     return (

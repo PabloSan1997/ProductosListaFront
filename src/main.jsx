@@ -5,14 +5,16 @@ import { Provider } from 'react-redux'
 import App from './App'
 import { store } from './store/store'
 import { CookiesProvider } from "react-cookie";
+import { ProvedorContexto } from './contexto/indes'
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-
-    <Provider store={store}>
-      <CookiesProvider>
+  <CookiesProvider>
+    <ProvedorContexto>
+      <Provider store={store}>
         <App />
-      </CookiesProvider>
-    </Provider>
+      </Provider>
+    </ProvedorContexto>
+  </CookiesProvider>
 
 )
