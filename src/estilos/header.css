@@ -5,6 +5,15 @@
     display: flex;
 }
 .titulo h1{
-    margin: auto;
+    margin: auto 31% auto auto;
     color: white;
+}
+.titulo .salir{
+    font-size: 1.1rem;
+    margin: auto 80px auto 0;
+    cursor: pointer;
+    color: white;
+}
+.titulo .salir:hover{
+    color: rgb(190, 217, 243);
 }
