@@ -1,9 +1,8 @@
 import React from 'react';
-
+import "../estilos/loading.css"
 export function Loading(){
     return(
-        <div className="loadin">
-            <p>Cargando...</p>
+        <div className="loading">
         </div>
     );
 }

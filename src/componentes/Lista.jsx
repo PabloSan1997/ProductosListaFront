@@ -8,7 +8,7 @@ export function Lista(){
     document.title="lista compras";
     if(per){
         return (
-            <div className="contenedor conteo">
+            <div className="contenedor lista">
                 <Menu/>
             </div>
         );

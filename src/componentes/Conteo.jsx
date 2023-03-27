@@ -13,7 +13,7 @@ export function Conteo() {
     let i = 1;
     const distpatch = useDispatch();
     const info = useSelector(state => state.conteo);
-    document.title="Conteo";
+    document.title = "Conteo";
     React.useEffect(
         () => {
             distpatch(llamarConteo());
@@ -23,15 +23,19 @@ export function Conteo() {
         return (
             <div className="contenedor conteo">
                 <Menu />
-                <Formulario />
                 {info.loading ? <Loading /> :
-                    (<div className="cuadro">
-                        {info.data.map(ele =>
-                        (
-                            <Caja key={ele._id} id={ele._id} nombre={ele.nombre} cuantos={ele.cuantos} tomar={ele.tomar} num={i++} />
-                        )
-                        )}
-                    </div>)
+                    (
+                        <>
+                            <Formulario />
+                            <div className="cuadro">
+                                {info.data.map(ele =>
+                                (
+                                    <Caja key={ele._id} id={ele._id} nombre={ele.nombre} cuantos={ele.cuantos} tomar={ele.tomar} num={i++} />
+                                )
+                                )}
+                            </div>
+                        </>
+                    )
                 }
             </div>
         );

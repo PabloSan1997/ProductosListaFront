@@ -21,14 +21,20 @@ export function Formulario(){
     }
     return(
         <form className="formulario" onSubmit={evento}>
-            <div className="fila">
-                <input type="text" className="entrada" placeholder='Nombre' onChange={escribir1}/>
+            <div className="areatitulo">
+                <h2>Agregar producto</h2>
             </div>
             <div className="fila">
-                <input type="text" className="entrada" placeholder='Cuantos' onChange={escribir2}/>
+                <label className="label">Nombre</label>
+                <input type="text" className="entrada" placeholder='Escribir' onChange={escribir1}/>
             </div>
             <div className="fila">
-                <input type="text" className="entrada" placeholder='Tomar' onChange={escribir3}/>
+                <label className="label">Cantidad</label>
+                <input type="text" className="entrada" placeholder='Escribir' onChange={escribir2}/>
+            </div>
+            <div className="fila">
+                <label className="label">Consumo</label>
+                <input type="text" className="entrada" placeholder='Escribir' onChange={escribir3}/>
             </div>
             <div className="areaboton">
                 <button className="boton">Agregar</button>

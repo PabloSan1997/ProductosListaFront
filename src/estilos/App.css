@@ -1,29 +1,30 @@
-*{
+* {
   margin: 0;
   padding: 0;
   font-family: arial;
 }
-#root{
-  --color1:rgb(15, 10, 51);
+:root {
+  --color1: rgb(15, 10, 51);
+  --fondo:rgb(233, 251, 255);
 }
-body{
-  background: rgb(233, 237, 238);
+body {
+  background: var(--fondo);
 }
 
-.contenedor{
+.contenedor {
   width: 100%;
   display: flex;
   flex-direction: column;
 }
-.contenedor .menu{
+.contenedor .menu {
   width: 30%;
   background: rgb(196, 205, 235);
   display: flex;
   border-radius: 10px;
-  margin:20px auto auto auto;
+  margin: 20px auto auto auto;
   height: 50px;
 }
-.contenedor .menu .sec{
+.contenedor .menu .sec {
   width: fit-content;
   height: fit-content;
   margin: auto;
@@ -32,11 +33,24 @@ body{
   padding: 10px;
   border-radius: 10px;
 }
-.contenedor .menu .sec:hover{
+.contenedor .menu .sec:hover {
   background: rgb(175, 175, 216);
   text-decoration: underline;
 }
-.contenedor .menu .sec.rojo{
+.contenedor .menu .sec.rojo {
   background: rgb(175, 175, 216);
   text-decoration: underline;
+}
+.boton {
+  padding: 5px;
+  border: 2px outset rgb(120, 120, 211);
+  border-radius: 10px;
+  cursor: pointer;
+  background: rgb(2, 2, 46);
+  font-weight: bold;
+  color: rgb(225, 225, 255);
+}
+
+.boton:active{
+  border: 2px inset rgb(120, 120, 211);
 }

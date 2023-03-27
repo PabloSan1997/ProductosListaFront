@@ -29,11 +29,11 @@ const slicerConteo = createSlice({
     extraReducers:(builder)=>{
         builder.addCase(llamarConteo.fulfilled, (state, action)=>{
             state.data=action.payload;
-            state.loading=true;
+            state.loading=false;
         });
         builder.addCase(llamarConteo.rejected, (state, action)=>{
             state.data=[];
-            state.loading=false
+            state.loading=false;
         });
         builder.addCase(llamarConteo.pending, (state, action)=>{
             state.loading=true

@@ -6,5 +6,6 @@ export async function mandarConteo(objeto) {
     window.location.reload();
   } catch (error) {
     console.log(error);
+    alert("Error al agregar informacion")
   }
 }
