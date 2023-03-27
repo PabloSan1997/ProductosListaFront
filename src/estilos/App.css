@@ -9,3 +9,34 @@
 body{
   background: rgb(233, 237, 238);
 }
+
+.contenedor{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.contenedor .menu{
+  width: 30%;
+  background: rgb(196, 205, 235);
+  display: flex;
+  border-radius: 10px;
+  margin:20px auto auto auto;
+  height: 50px;
+}
+.contenedor .menu .sec{
+  width: fit-content;
+  height: fit-content;
+  margin: auto;
+  color: rgb(3, 3, 22);
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 10px;
+}
+.contenedor .menu .sec:hover{
+  background: rgb(175, 175, 216);
+  text-decoration: underline;
+}
+.contenedor .menu .sec.rojo{
+  background: rgb(175, 175, 216);
+  text-decoration: underline;
+}

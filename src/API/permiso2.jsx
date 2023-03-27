@@ -8,7 +8,7 @@ export function usePermiso2() {
     useEffect(() => {
         (async () => {
             try {
-                const mandar = await axios.get(`http://localhost:3001/api/v1/usuario/${cookie.ver}`);
+                const mandar = await axios.get(`https://mylista.onrender.com/api/v1/usuario/${cookie.ver}`);
                 setPer(await mandar.data.estado);
             } catch (error) {
                 console.log("No adentro");

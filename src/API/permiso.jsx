@@ -12,7 +12,7 @@ export function usePermiso1(){
         if(!!solicitud.contra && !!solicitud.usuario){
             (async()=>{
                 try {
-                    const mandar = await axios.post("http://localhost:3001/api/v1/usuario", solicitud);
+                    const mandar = await axios.post("https://mylista.onrender.com/api/v1/usuario", solicitud);
                     const info = await mandar.data;
                     if(!info.message){
                         throw "no hay mensaje";
