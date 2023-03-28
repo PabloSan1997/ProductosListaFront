@@ -61,3 +61,16 @@
     border: 2px outset rgb(45, 45, 83);
     border-radius: 10px;
 }
+
+/* Parte responsiva */
+
+@media (max-width:862px) {
+    .login .caja{
+        width: 70%;
+    }   
+}
+@media (max-width:480px) {
+    .login .caja{
+        width: 90%;
+    }   
+}

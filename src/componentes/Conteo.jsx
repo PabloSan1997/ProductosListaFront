@@ -15,6 +15,7 @@ export function Conteo() {
     const distpatch = useDispatch();
     const info = useSelector(state => state.conteo);
     document.title = "Conteo";
+    localStorage.ir="/conteo";
     React.useEffect(
         () => {
             distpatch(llamarConteo());
@@ -64,8 +65,9 @@ function Caja(props) {
     const borrar = () => {
         dispatch(borrarCon({ accion: props.id }));
     }
+    const color = {background:"#f79696"}
     return (
-        <div className="caja">
+        <div className="caja"  style={props.num%2===0?color:null}>
             <div className="filad num">
                 <p>{props.num}</p>
             </div>

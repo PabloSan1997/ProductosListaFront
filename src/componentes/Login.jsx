@@ -12,6 +12,9 @@ export function Login() {
     const [escribir, setEscribir] = React.useState("");
     const [escribir2, setEscribir2] = React.useState("");
     const {setSolicitud, per } = useContexto();
+    if(!localStorage.ir){
+        localStorage.ir="/conteo";
+    }
     const evento = (e) => {
         setSolicitud({
             usuario: escribir,
@@ -21,7 +24,7 @@ export function Login() {
     }
     return (
         <>
-            {per ? <Navigate to="/conteo" /> : (
+            {per ? <Navigate to={localStorage.ir} /> : (
                 <div className="contenedor login">
                     <form className="caja" onSubmit={evento}>
                         <h2>Entrar</h2>

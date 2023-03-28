@@ -45,7 +45,7 @@
   font-size: 1.5rem;
 }
 
-.conteo .cuadro {
+.cuadro {
   width: 98%;
   margin: auto;
   display: flex;
@@ -54,50 +54,76 @@
   border: 3px solid rgb(5, 1, 24);
   overflow: hidden;
 }
-.conteo .caja{
-    width: 100%;
-    display: grid;
-    grid-template-columns: 5% 65% 15% 15%;
-    min-height: 50px;
-    background: rgb(250, 198, 198);
+.caja {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 5% 65% 15% 15%;
+  min-height: 50px;
+  background: rgb(250, 198, 198);
 }
 
-.conteo .caja .filad{
-    display: flex;
-    border-bottom: 1px solid rgb(39, 4, 4);
+.caja .filad {
+  display: flex;
+  border-bottom: 1px solid rgb(39, 4, 4);
 }
-.conteo .caja .filad.prod p{
-    margin: auto auto auto 2%;
+.caja .filad.prod p {
+  margin: auto auto auto 2%;
 }
-.conteo .caja.cabeza .filad.prod p{
-    margin: auto;
+.caja.cabeza .filad.prod p {
+  margin: auto;
 }
-.conteo .caja.cabeza .filad p{
-    color: rgb(252, 229, 229);
-    font-weight: bold;
-    font-size: 1.2rem;
+.caja.cabeza .filad p {
+  color: rgb(252, 229, 229);
+  font-weight: bold;
+  font-size: 1.2rem;
 }
-.conteo .caja .filad p{
-   width: fit-content;
-   margin: auto;
-   font-size: 1.3rem;
+.caja .filad p {
+  width: fit-content;
+  margin: auto;
+  font-size: 1.3rem;
 }
-.conteo .caja.cabeza{
-    background: rgb(68, 4, 4);
-    height: 50px;
+.caja.cabeza {
+  background: rgb(68, 4, 4);
+  height: 50px;
 }
-.conteo .caja .filad.con{
-    display: flex;
+.caja .filad.con {
+  display: flex;
 }
-.conteo .caja .filad.con .texto{
-    margin: auto;
+.caja .filad.con .texto {
+  margin: auto;
 }
-.conteo .caja .filad.con span{
-    margin: auto 5% auto 1%;
-    user-select: none;
-    font-size: 1.5rem;
-    cursor: pointer;
+.caja .filad.con span {
+  margin: auto 5% auto 1%;
+  user-select: none;
+  font-size: 1.5rem;
+  cursor: pointer;
 }
-.conteo .caja .filad.con span:hover{
-    background: rgb(245, 169, 169);
+.caja .filad.con span:hover {
+  background: rgb(245, 169, 169);
+}
+@media (max-width: 728px) {
+  .conteo .formulario .fila {
+    width: 80%;
+  }
+  .contenedor .menu {
+    width: 50%;
+  }
+}
+
+@media (max-width: 648px) {
+  .contenedor .menu {
+    width: 80%;
+  }
+  .caja {
+    grid-template-columns: 10% 50% 20% 20%;
+  }
+  .caja.cabeza .filad p{
+    font-size: .9rem;
+  }
+  .caja .filad p{
+    font-size: 1rem;
+  }
+  .caja .filad.con span{
+    font-size: 1rem;
+  }
 }
