@@ -1,12 +1,13 @@
 {
   "name": "productosfrontend",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite --port 3010 --open",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "deploy":"gh-pages -d dist"
   },
   "dependencies": {
     "@reduxjs/toolkit": "^1.9.3",
@@ -21,6 +22,19 @@
     "@types/react": "^18.0.28",
     "@types/react-dom": "^18.0.11",
     "@vitejs/plugin-react": "^3.1.0",
+    "gh-pages": "^5.0.0",
     "vite": "^4.2.0"
-  }
+  },
+  "description": "",
+  "main": "src/main.jsx",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PabloSan1997/ProductosListaFront.git"
+  },
+  "author": "Pablo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PabloSan1997/ProductosListaFront/issues"
+  },
+  "homepage": "https://github.com/PabloSan1997/ProductosListaFront#readme"
 }
