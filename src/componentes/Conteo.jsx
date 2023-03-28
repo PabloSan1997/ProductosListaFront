@@ -8,6 +8,7 @@ import { Loading } from './Loading';
 import { Menu } from './Menu';
 import "../estilos/conteo.css";
 
+
 export function Conteo() {
     const { per } = useContexto();
     let i = 1;
@@ -28,6 +29,20 @@ export function Conteo() {
                         <>
                             <Formulario />
                             <div className="cuadro">
+                                <div className="caja cabeza">
+                                    <div className="filad num">
+                                        <p>Num</p>
+                                    </div>
+                                    <div className="filad prod">
+                                        <p>Producto</p>
+                                    </div>
+                                    <div className="filad cant">
+                                        <p>Cantidad</p>
+                                    </div>
+                                    <div className="filad con">
+                                       <p>Consumo</p>
+                                    </div>
+                                </div>
                                 {info.data.map(ele =>
                                 (
                                     <Caja key={ele._id} id={ele._id} nombre={ele.nombre} cuantos={ele.cuantos} tomar={ele.tomar} num={i++} />
@@ -50,12 +65,20 @@ function Caja(props) {
         dispatch(borrarCon({ accion: props.id }));
     }
     return (
-        <div className="fila">
-            <span className="cerrar" onClick={borrar}>X</span>
-            <span className="num">{props.num}</span>
-            <p className="nombre">{props.nombre}</p>
-            <p className="cuantos">{props.cuantos}</p>
-            <p className="tomar">{props.tomar}</p>
+        <div className="caja">
+            <div className="filad num">
+                <p>{props.num}</p>
+            </div>
+            <div className="filad prod">
+                <p>{props.nombre}</p>
+            </div>
+            <div className="filad cant">
+                <p>{props.cuantos}</p>
+            </div>
+            <div className="filad con">
+                <p className='texto'>{props.tomar}</p>
+                <span onClick={borrar}>X</span>
+            </div>
         </div>
     );
 }

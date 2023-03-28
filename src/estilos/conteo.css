@@ -1,47 +1,103 @@
-.conteo .formulario{
-    width: 99%;
-    height: 300px;
-    margin:20px auto 0 auto;
-    display: flex;
-    flex-direction: column;
+.conteo .formulario {
+  width: 99%;
+  height: 300px;
+  margin: 20px auto 0 auto;
+  display: flex;
+  flex-direction: column;
 }
-.conteo .formulario .areatitulo{
-    width: 100%;
-    display: flex;
-    height: 15%;
-    border-bottom: 1px solid blue;
+.conteo .formulario .areatitulo {
+  width: 100%;
+  display: flex;
+  height: 15%;
+  border-bottom: 1px solid blue;
 }
-.conteo .formulario .areatitulo h2{
-    margin: auto;
-    color: rgb(3, 3, 37);
+.conteo .formulario .areatitulo h2 {
+  margin: auto;
+  color: rgb(3, 3, 37);
 }
-.conteo .formulario .fila{
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-    margin: auto;
+.conteo .formulario .fila {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin: auto;
 }
-.conteo .formulario .fila label{
-    font-size: 1.1rem;
-    margin: auto auto auto 1px;
+.conteo .formulario .fila label {
+  font-size: 1.1rem;
+  margin: auto auto auto 1px;
 }
-.conteo .formulario .fila .entrada{
-    font-size: 1.5rem;
-    border-radius: 10px;
-    padding: 1px 5px;
-    outline: none;
-    border: 2px inset rgb(148, 148, 233);
-    background: rgb(198, 198, 228);
-    color: rgb(5, 5, 48);
+.conteo .formulario .fila .entrada {
+  font-size: 1.5rem;
+  border-radius: 10px;
+  padding: 1px 5px;
+  outline: none;
+  border: 2px inset rgb(148, 148, 233);
+  background: rgb(198, 198, 228);
+  color: rgb(5, 5, 48);
 }
-.conteo .formulario .areaboton{
-    width: 100%;
-    height: 20%;
-    margin: auto auto 0 auto;
-    display: flex;
+.conteo .formulario .areaboton {
+  width: 100%;
+  height: 20%;
+  margin: auto auto 0 auto;
+  display: flex;
 }
-.conteo .formulario .areaboton .boton{
-    margin: auto;
-    font-size: 1.5rem;
+.conteo .formulario .areaboton .boton {
+  margin: auto;
+  font-size: 1.5rem;
 }
 
+.conteo .cuadro {
+  width: 98%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  border: 3px solid rgb(5, 1, 24);
+  overflow: hidden;
+}
+.conteo .caja{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 5% 65% 15% 15%;
+    min-height: 50px;
+    background: rgb(250, 198, 198);
+}
+
+.conteo .caja .filad{
+    display: flex;
+    border-bottom: 1px solid rgb(39, 4, 4);
+}
+.conteo .caja .filad.prod p{
+    margin: auto auto auto 2%;
+}
+.conteo .caja.cabeza .filad.prod p{
+    margin: auto;
+}
+.conteo .caja.cabeza .filad p{
+    color: rgb(252, 229, 229);
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+.conteo .caja .filad p{
+   width: fit-content;
+   margin: auto;
+   font-size: 1.3rem;
+}
+.conteo .caja.cabeza{
+    background: rgb(68, 4, 4);
+    height: 50px;
+}
+.conteo .caja .filad.con{
+    display: flex;
+}
+.conteo .caja .filad.con .texto{
+    margin: auto;
+}
+.conteo .caja .filad.con span{
+    margin: auto 5% auto 1%;
+    user-select: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+.conteo .caja .filad.con span:hover{
+    background: rgb(245, 169, 169);
+}
